@@ -1,0 +1,13 @@
+name: digests
+version: 0.1.0
+
+authors:
+  - Hentioe <me@bluerain.io>
+
+crystal: 0.30.1
+
+license: MIT
+
+dependencies:
+  sam:
+    github: imdrasil/sam.cr
