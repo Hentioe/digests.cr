@@ -1,7 +1,7 @@
 require "sam"
 require "../src/digests"
 
-namespace "digest" do
+namespace "digests" do
   desc "Digests static files"
   task "make" do |_, argv|
     args =

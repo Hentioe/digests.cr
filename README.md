@@ -46,14 +46,14 @@ Original file tree:
 Make digests:
 
 ```bash
-crystal sam.cr -- digest:make
+crystal sam.cr -- digests:make examples/static
 ```
 
 Contains digests and manifest file tree:
 
 ```
 static/
-├── cache_manifest.json # <- Digests information recorded
+├── cache_manifest.json # Digests information recorded
 ├── css
 │   ├── app-43c1d0618c68fde58d940f3375d919c8.css
 │   ├── app.css
@@ -70,7 +70,7 @@ static/
 ## Development
 
 ```crystal
-Digests.init
+Digests.init "examples/static" # Default "static"
 Digests.logical_path("/js/app.js") # => /js/app-42a314210f311e84f2dc144cbddeaac9.js
 ```
 

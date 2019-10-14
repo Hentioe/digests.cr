@@ -6,7 +6,7 @@ describe Digests do
   end
 
   it "logical_path" do
-    Digests.init
+    Digests.init("examples/static")
     digested_path = Digests.logical_path("/js/app.js")
     digested_path.should be_truthy
     digested_path.not_nil!.should eq("/js/app-42a314210f311e84f2dc144cbddeaac9.js")
