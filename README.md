@@ -10,41 +10,42 @@ Digests and cache static files
    dependencies:
      digests:
        github: Hentioe/digests.cr
-    # Also need sam as a task execution tool
-    sam:
-      github: imdrasil/sam.cr
+     # Also need sam as a task execution tool
+     sam:
+       github: imdrasil/sam.cr
    ```
 
 2. Run `shards install`
 
 3. Create `sam.cr`
 
-```
-require "sam"
-load_dependencies "digests"
+   ```crystal
+   require "sam"
+   load_dependencies "digests"
 
-# your custom tasks here
+   # your custom tasks here
 
-Sam.help
-```
+   Sam.help
+   ```
+
 ## Usage
 
 Original file tree:
 
-```
-static/
-├── css
-│   ├── app.css
-│   └── pages
-│       └── index.css
-├── js
-│   └── app.js
-└── logo.svg
-```
+    ```
+    static/
+    ├── css
+    │   ├── app.css
+    │   └── pages
+    │       └── index.css
+    ├── js
+    │   └── app.js
+    └── logo.svg
+    ```
 
 Make digests:
 
-``` bash
+```bash
 crystal sam.cr -- digest:make
 ```
 
@@ -81,7 +82,7 @@ It is generally used in backend templates, for example:
 
 ## Contributing
 
-1. Fork it (<https://github.com/Hentioe/digests/fork>)
+1. Fork it (<https://github.com/Hentioe/digests.cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

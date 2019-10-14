@@ -44,6 +44,7 @@ module Digests
       fpath = "#{static_path}#{logical_path}"
       FileUtils.rm fpath
     end
+    FileUtils.rm "#{static_path}/#{MANIFEST_FILE_NAME}" if digested
   end
 
   alias FileList = Array(String)
