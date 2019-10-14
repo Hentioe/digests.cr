@@ -1,5 +1,5 @@
 require "sam"
-require "../src/digests"
+require "./digests"
 
 namespace "digests" do
   desc "Digests static files"

@@ -1,3 +1,3 @@
-require "../tasks/sam"
+require "../src/sam"
 
 Sam.help
