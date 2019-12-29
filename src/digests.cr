@@ -8,7 +8,7 @@ module Digests
   IGNORE_FILES       = [
     MANIFEST_FILE_NAME,
     "favicon.ico",
-    "rebots.txt",
+    "robots.txt",
   ]
 
   @@manifest = Manifest.new 1

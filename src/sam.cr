@@ -35,4 +35,3 @@ namespace "digests" do
       end
   end
 end
-
